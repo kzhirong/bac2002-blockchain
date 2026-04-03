@@ -1,0 +1,55 @@
+# ── Environment variables ──────────────────────────────────────────────────────
+# Never commit secrets. .env.example files are safe and should be committed.
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+packages/**/.env
+packages/**/.env.local
+
+# ── Dependencies ───────────────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ── Build outputs ──────────────────────────────────────────────────────────────
+dist/
+out/
+build/
+.next/
+.nuxt/
+.output/
+
+# ── Hardhat / Contracts ────────────────────────────────────────────────────────
+packages/contracts/artifacts/
+packages/contracts/cache/
+packages/contracts/typechain-types/
+packages/contracts/deployments/
+
+# ── Shared generated files ─────────────────────────────────────────────────────
+packages/shared/contractAddresses.json
+
+# ── TypeScript ─────────────────────────────────────────────────────────────────
+*.tsbuildinfo
+
+# ── Logs ───────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Test coverage ──────────────────────────────────────────────────────────────
+coverage/
+.nyc_output/
+
+# ── Deployment ─────────────────────────────────────────────────────────────────
+.vercel/
+
+# ── OS / editor ────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo

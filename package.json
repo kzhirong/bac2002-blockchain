@@ -1,0 +1,16 @@
+{
+  "name": "bac2002-blockchain",
+  "version": "1.0.0",
+  "private": true,
+  "pnpm": {
+    "onlyBuiltDependencies": ["keccak", "secp256k1"]
+  },
+  "scripts": {
+    "test": "pnpm --filter contracts test",
+    "compile": "pnpm --filter contracts compile",
+    "deploy:amoy": "pnpm --filter contracts deploy:amoy",
+    "dev:portal": "pnpm --filter issuer-portal dev",
+    "dev:wallet": "pnpm --filter user-wallet dev",
+    "dev:verifier": "pnpm --filter verifier-app dev"
+  }
+}
